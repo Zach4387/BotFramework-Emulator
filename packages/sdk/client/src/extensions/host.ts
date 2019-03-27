@@ -40,6 +40,7 @@ export interface InspectorHost {
   readonly logger: {
     log(message: string): () => void;
     error(message: string): () => void;
+    logLuisEditorDeepLink(message: string): () => void;
   };
 
   // Each "on" function returns a method that when called, will unregister the handler.
